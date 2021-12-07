@@ -15,6 +15,7 @@ export class PostService {
 
   GetPosts(): Observable<Post[]>
   {
+    
     return this.http.get<Post[]>(this.postUrl);
   }
 
